@@ -5,6 +5,7 @@ import { useChatRuntime } from "@assistant-ui/react-ai-sdk";
 import { Thread } from "@/components/assistant-ui/thread";
 import { ThreadList } from "@/components/assistant-ui/thread-list";
 
+
 export const Assistant = () => {
   const runtime = useChatRuntime({
     api: "/api/chat",
@@ -12,7 +13,7 @@ export const Assistant = () => {
 
   return (
     <AssistantRuntimeProvider runtime={runtime}>
-      <div className="grid h-dvh grid-cols-[200px_1fr] gap-x-2 px-4 py-4">
+      <div className="grid h-169 grid-cols-[200px_1fr] gap-x-2 px-4 py-4 bg-gradient-to-bl from-black via-gray-800 to-emerald-800">
         <ThreadList />
         <Thread />
       </div>

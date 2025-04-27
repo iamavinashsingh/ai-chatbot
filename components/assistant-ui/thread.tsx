@@ -16,6 +16,8 @@ import {
   RefreshCwIcon,
   SendHorizontalIcon,
 } from "lucide-react";
+
+
 import { cn } from "@/lib/utils";
 
 import { Button } from "@/components/ui/button";
@@ -25,7 +27,7 @@ import { TooltipIconButton } from "@/components/assistant-ui/tooltip-icon-button
 export const Thread: FC = () => {
   return (
     <ThreadPrimitive.Root
-      className="bg-background box-border flex h-full flex-col overflow-hidden"
+      className="bg-background h-160 rounded-md box-border flex  flex-col overflow-hidden"
       style={{
         ["--thread-max-width" as string]: "42rem",
       }}
@@ -73,7 +75,13 @@ const ThreadWelcome: FC = () => {
     <ThreadPrimitive.Empty>
       <div className="flex w-full max-w-[var(--thread-max-width)] flex-grow flex-col">
         <div className="flex w-full flex-grow flex-col items-center justify-center">
-          <p className="mt-4 font-medium">How can I help you today?</p>
+        <div className="relative p-6 rounded-2xl bg-white/30 backdrop-blur-md border border-white/40 shadow-lg w-full max-w-md mx-auto mt-10">
+          <h2 className="text-2xl font-bold text-gray-800 mb-2">Hi 👋,</h2>
+          <p className="text-gray-600 text-md">How may I help you today?</p>
+          <p className="text-gray-600 text-md">Ask me anything!</p>
+          <span className="absolute top-4 right-4 h-3 w-3 bg-green-400 rounded-full animate-ping"></span>
+</div>
+
         </div>
         <ThreadWelcomeSuggestions />
       </div>
@@ -86,22 +94,32 @@ const ThreadWelcomeSuggestions: FC = () => {
     <div className="mt-3 flex w-full items-stretch justify-center gap-4">
       <ThreadPrimitive.Suggestion
         className="hover:bg-muted/80 flex max-w-sm grow basis-0 flex-col items-center justify-center rounded-lg border p-3 transition-colors ease-in"
-        prompt="What is the weather in Tokyo?"
+        prompt="What is MERN Stack?"
         method="replace"
         autoSend
       >
         <span className="line-clamp-2 text-ellipsis text-sm font-semibold">
-          What is the weather in Tokyo?
+        What is MERN Stack?
         </span>
       </ThreadPrimitive.Suggestion>
       <ThreadPrimitive.Suggestion
         className="hover:bg-muted/80 flex max-w-sm grow basis-0 flex-col items-center justify-center rounded-lg border p-3 transition-colors ease-in"
-        prompt="What is assistant-ui?"
+        prompt="What is React.js?"
         method="replace"
         autoSend
       >
         <span className="line-clamp-2 text-ellipsis text-sm font-semibold">
-          What is assistant-ui?
+        What is React.js?
+        </span>
+      </ThreadPrimitive.Suggestion>
+      <ThreadPrimitive.Suggestion
+        className="hover:bg-muted/80 flex max-w-sm grow basis-0 flex-col items-center justify-center rounded-lg border p-3 transition-colors ease-in"
+        prompt="Roadmap for SDE"
+        method="replace"
+        autoSend
+      >
+        <span className="line-clamp-2 text-ellipsis text-sm font-semibold">
+        Roadmap for SDE
         </span>
       </ThreadPrimitive.Suggestion>
     </div>

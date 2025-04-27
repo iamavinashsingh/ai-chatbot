@@ -1,5 +1,12 @@
 import { Assistant } from "./assistant";
+import  Navbar  from "@/components/ui/navbar";
 
 export default function Home() {
-  return <Assistant />;
+  return(
+    <div>
+      <Navbar />
+      <Assistant />
+      
+    </div>
+  ) ;
 }
