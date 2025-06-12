@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CrackCode ",
+  title: "Ai Chat Bot ",
   description: "A simple chat bot using Ai Google Gemini",
   icons: {
     icon: "https://www.crakcode.in/crakCodeLogoImg.svg",

@@ -79,7 +79,7 @@ const ThreadWelcome: FC = () => {
           <h2 className="text-2xl font-bold text-gray-800 mb-2">Hi 👋,</h2>
           <p className="text-gray-600 text-md">How may I help you today?</p>
           <p className="text-gray-600 text-md">Ask me anything!</p>
-          <span className="absolute top-4 right-4 h-3 w-3 bg-green-400 rounded-full animate-ping"></span>
+          <span className="absolute top-4 right-4 h-3 w-3 bg-red-400 rounded-full animate-ping"></span>
 </div>
 
         </div>

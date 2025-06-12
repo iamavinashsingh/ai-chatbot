@@ -8,17 +8,18 @@ const Navbar = () => {
     const pathname = usePathname();
 
     const tabs = [
-        { name: 'Home', href: 'https://www.crakcode.in/' },
-        { name: 'Community', href: 'https://www.crakcode.in/community' },
-        { name: 'Hackathon', href: 'https://www.crakcode.in/hackathon' },
         { name: 'AI Chatbot', href: '/' },
     ];
 
     return (
-        <nav className="w-full flex items-center justify-between px-4 py-4 shadow-md bg-white">
+        <nav className="w-full flex items-center justify-between px-4 py-4 shadow-md bg-white/30">
             {/* Logo */}
-            <div className="flex items-center space-x-4">
-                <img src="https://www.crakcode.in/crakCodeLogoImg.svg" alt="Crack-code Logo" className="h-10 w-10 object-contain" />
+            <div className="flex justify-center items-center space-x-4">
+                <img
+                    src="https://cdn-icons-png.flaticon.com/128/900/900961.png"
+                    alt="Ai Logo"
+                    className="h-10 w-10"></img>
+                <h2 className='text-3xl -translate-x-3 font-bold tracking-tighter uppercase'>Ai Chat Bot</h2>
             </div>
 
             {/* Tabs */}
@@ -45,7 +46,7 @@ const Navbar = () => {
 
             {/* Notification & Profile */}
             <div className="flex items-center space-x-6">
-                <img src="https://www.crakcode.in/Navbar/notification.svg" alt="notification icon" className="h-8.5 w-8.5" />
+                <img src="https://cdn-icons-png.flaticon.com/128/2645/2645897.png" alt="notification icon" className="h-8.5 w-8.5" />
                 <User className="h-10 w-10 p-1 text-gray-700 border-2 border-black rounded-full" />
             </div>
         </nav>
