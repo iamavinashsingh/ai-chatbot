@@ -4,7 +4,7 @@ This is an AI-powered chatbot application built with modern web technologies. It
 
 ## Deployment links
 
-- *link*:  https://ai-chatbot-a8kvwtw5c-iamavinashsinghs-projects.vercel.app/
+- *link*:  https://ai-chatbot-pi-roan-51.vercel.app/
 
 ## Features
 
